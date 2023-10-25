@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Refresh" content="1800"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tin tức công nghệ"/>
+    <meta name="keywords" content="hiện đại, xu hướng, tin tức, tin tức online, đọc báo, báo, tin, tin nhanh, genz, news, giới trẻ" />
+    <title>Gen-Z News- Trang tin tức dành cho giới trẻ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://logoart.vn/blog/wp-content/uploads/2013/04/thiet-ke-logo-tin-tuc-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/page2-3/tech.css">
+    <link rel="stylesheet" href="css/mobile/main.css" media="screen and (max-width: 740px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-load">
+    <div class="step1">
+      <div class="laptop">
+          <div class="loading"></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="page2">
+      <header>
+        <div class="width-main">
+          <div class="top-head flex">
+              <div class="web-name">
+                  <a href="index.html">
+                      <h1>
+                          <span style="--i:1;">G</span>
+                          <span style="--i:2;">E</span>
+                          <span style="--i:3;">N</span>
+                          <span style="--i:4;">-</span>
+                          <span style="--i:5;">Z</span>
+                          <span style="--i:6;">&nbsp</span>
+                          <span style="--i:7;">N</span>
+                          <span style="--i:8;">E</span>
+                          <span style="--i:9;">W</span>
+                          <span style="--i:10;">S</span>
+                      </h1>
+                  </a>
+              </div>
+  
+              <div id="real-time"></div>
+  
+              <div class="header-social white-text">
+                  <ul class="flex">
+                      <li><a href="">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a></li>
+                      <li><a href="">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a></li>
+                      <li><a href="">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a></li>
+                      <li><a href="">
+                          <i class="fa-brands fa-tiktok"></i>
+                      </a></li>
+                      <li><a href="">
+                          <i class="fa-brands ti-android"></i>
+                      </a></li>
+                      <li><a href="">
+                          <i class="fa-brands fa-app-store"></i>
+                      </a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  
+      <div class="width-main">
+          <div class="hot-news flex">
+              <div class="hot-text">
+                <p>Tin mới cập nhật</p>
+              </div>
+              <marquee id="marquee" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+              <p>
+                  <a href="article.html" class="hot-content">
+                      Huawei Mate 40 ra mắt với tên gọi mới, có hỗ trợ 5G
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      Tiêu chí chọn laptop cho sinh viên
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      Hệ sinh thái blockchain Solana đang thất thoát hàng triệu USD do bị hack?
+                  </a>
+                  
+                  <a href="article.html" class="hot-content">
+                      Lịch thi đấu - BXH các giải VĐQG 2022 - 2023
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      Game 32: Saigon Heat trắng tay 2 trận sân nhà, sân khách trước Nha Trang Dolphins
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      Commonwealth Games 2022: Bước thử nghiệm của IOC trước khi đưa Esports vào Olympic
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      “Ơn nghĩa sinh thành 2022” - Chương trình nghệ thuật đặc biệt nhân mùa Vu Lan
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      Chi Pu đóng phim kinh dị 'Mười'
+                  </a>
+  
+                  <a href="article.html" class="hot-content">
+                      Lý Hải khởi động phim 'Lật mặt 6'
+                  </a>
+              </p>
+              </marquee>
+          </div>
+      </div>
+  
+      <div class="width-main">
+          <div class="mobile-css flex sticky-mobile">
+              <div id="mobile-time"></div>
+      
+              <div class="list-icon">
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+          </div>
+      </div>
+  
+      <div class="width-main sticky">
+          <div id="nav" class="menu flex">
+              <ul class ="flex nav-bar mb">
+                  <li><a href="index.html">TRANG CHỦ</a></li>
+                  <li>
+                      <div class="mobile-icon flex">
+                          <a href="tech.html">CÔNG NGHỆ</a>
+                          <i class="fa-solid fa-chevron-down" rel = "1"></i>
+                      </div>
+                      <div class="sub-nav">
+                          <ul class="one">
+                              <li><a href="tech.html">Sản phẩm</a></li>
+                              <li><a href="tech.html">Ứng dụng</a></li>
+                              <li><a href="tech.html">Bên lề</a></li>
+                          </ul>
+                      </div>
+                  </li>
+  
+                  <li>
+                      <div class="mobile-icon flex">
+                          <a href="sport.html">THỂ THAO</a>
+                          <i class="fa-solid fa-chevron-down" rel = "2"></i>
+                      </div>
+                      <div class="sub-nav">
+                          <ul class="two">
+                              <li><a href="sport.html">Bóng đá</a></li>
+                              <li><a href="sport.html">Bóng rổ</a></li>
+                              <li><a href="sport.html">Esports</a></li>
+                          </ul>
+                      </div>
+                  </li>
+  
+                  <li>
+                      <div class="mobile-icon flex">
+                          <a href="index.html">GIẢI TRÍ</a>
+                          <i class="fa-solid fa-chevron-down" rel = "3"></i>
+                      </div>
+                      <div class="sub-nav">
+                          <ul class="three">
+                              <li><a href="index.html">Gameshow</a></li>
+                              <li><a href="index.html">Phim</a></li>
+                              <li><a href="index.html">Thế giới sao</a></li>
+                          </ul>
+                      </div>
+                      
+                  </li>
+                  <li><a href="#footer" class="down">LIÊN HỆ</a></li>
+              </ul>
+  
+              <div class="search mb">
+                  <div class="flex">
+                      <input type="text" placeholder="Tìm kiếm..." id="find">
+                      <a href="" id="to">
+                          <i class="fa-solid fa-magnifying-glass text-white"></i>
+                      </a>
+  
+                      <ul id="recommend">
+  
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </header>
+
+        <div class="back-to-top flex">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <section class="banner width-page flex">
+            <div class="banner-main-content">
+              <h2>TỔNG HỢP TIN TỨC CÔNG NGHỆ MỚI NHẤT</h2>
+              <h3>Cổng thông tin công nghệ hàng đầu thế giới</h3>
+              <button class="tech-more">
+                <a href="#">XEM THÊM</a>
+              </button>
+              <div class="current-news-head">
+                <h3 title="LINK">
+                  Sự khác nhau giữa Intel Core i3, i5 và i7? Đâu mới là sự lựa chọn
+                  phù hợp với bạn<span>by Tuấn Kiệt</span>
+                </h3>
+      
+                <h3 title="LINK">
+                  Sau nhiều lần lộ dữ liệu, Facebook bắt đầu thử nghiệm tính năng mã
+                  hóa tin nhắn trên Messenger<span>by Minh Liêm</span>
+                </h3>
+      
+                <h3 title="LINK">
+                  Điện thoại gập sẽ chiếm 50% tổng doanh số smartphone của Samsung
+                  trong năm 2025<span>by Tuấn Kiệt</span>
+                </h3>
+              </div>
+            </div>
+      
+            <div class="banner-sub-content">
+              <div class="flex">
+                <!--hot toppic 1-->
+                <div class="hot-topic">
+                  <a href="article.html">
+                    <img src="images/banner-sub-content/android-13.jpeg" />
+                  </a>
+      
+                  <div class="hot-topic-content">
+                    <a href="article.html">
+                      <h2>
+                        Android 13 chính thức được phát hành sớm hơn thông lệ hằng năm
+                      </h2>
+                    </a>
+                  </div>
+                </div>
+                <!--hot toppic 2-->
+                <div class="hot-topic">
+                  <a href="article.html">
+                    <img src="images/banner-sub-content/appleWatch.jpg" />
+                  </a>
+      
+                  <div class="hot-topic-content">
+                    <a href="article.html">
+                      <h2>
+                        Apple đang cân nhắc sản xuất MacBook và đồng hồ ở Việt Nam
+                      </h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <!--hot toppic 3-->
+                <div class="hot-topic">
+                  <a href="article.html">
+                    <img src="images/banner-sub-content/CEOofAplle.jpg" />
+                  </a>
+      
+                  <div class="hot-topic-content">
+                    <a href="article.html">
+                      <h2>
+                        Trong tháng vừa qua, Apple đã đẩy mạnh quảng cáo trên iphone
+                      </h2>
+                    </a>
+                  </div>
+                </div>
+                <!--hot toppic 4-->
+                <div class="hot-topic fourth">
+                  <a href="article.html">
+                    <img src="images/banner-sub-content/android-12.jpg" />
+                  </a>
+      
+                  <div class="hot-topic-content">
+                    <a href="article.html">
+                      <h2>
+                        Sau 1 năm ra mắt, mới chỉ có 13% lượng điện thoại lên Android
+                        12
+                      </h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <hr />
+      
+          <main class="width-page flex main-tech">
+            <section class="main-container-left">
+              <h2>TIN TỨC HOT</h2>
+              <div class="container-top-left">
+                <article>
+                  <iframe
+                    width="660"
+                    height="370.873"
+                    src="https://www.youtube.com/embed/yh-xYEk_MR8"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+      
+                  <div>
+                    <a href="https://www.youtube.com/c/ThanhDuongHuu" target="_blank">
+                      <h3>Mở hộp iphone 13 Pro Max màu Xanh Dương</h3>
+                    </a>
+      
+                    <p>
+                      Đập hộp iPhone 13 Pro Max mẫu smartphone cao cấp nhất của Apple
+                      mới ra mắt với hiệu năng mạnh mẽ, camera sắc nét, cùng UnBox
+                      ngay để khám phá các linh kiện bên trong.
+                    </p>
+                    <a href="https://www.youtube.com/c/ThanhDuongHuu" target="_blank"
+                      ><span>by: Thanh Duong Huu</span></a
+                    >
+                  </div>
+                </article>
+              </div>
+      
+              <div class="container-bottom-left flex">
+                <article>
+                  <img src="images/main/core-intel.jpg" alt="Core Intel" />
+      
+                  <h3>Intel nhượng quyền 5000 bằng sáng chế để kiếm tiền</h3>
+                  <p>
+                    Theo TechRadar, Intel vừa chuyển giao hơn 5 nghìn bằng sáng chế
+                    của họ sang cho đơn vị nhượng quyền sở hữu trí ...
+                  </p>
+                  <a href="#"><span>by Tuấn Kiệt</span></a>
+                </article>
+      
+                <article>
+                  <img src="images/main/windows11.jpg" alt="Window 11" />
+      
+                  <h3>Windows 11 cuối cùng cũng có hoạt ảnh trên các tiện ích</h3>
+                  <p>
+                    Phải đến đầu năm nay, Microsoft mới đem tiện ích thời tiết trở lại
+                    với Windows 11. Tuy nhiên, kể từ đó đến ...
+                  </p>
+                  <a href="#"><span>by Minh Liêm</span></a>
+                </article>
+              </div>
+            </section>
+            <section class="main-container-right">
+              <h2>TIN TỨC MỚI</h2>
+      
+              <article class="flex">
+                <a href="article.html">
+                  <div class="content-1">
+                    <h2>
+                      OPPO đang làm 2 mẫu điện thoại màn hình gập để ra mắt thị trường
+                      quốc tế
+                    </h2>
+                    <p>
+                      Hồi tháng 12/2021, OPPO đã cho ra mắt chiếc Find N – mẫu điện
+                      thoại màn hình gập đầu tiên của hãng. Dù ...
+                    </p>
+                    <a href="#">by Tuấn Kiệt</a>
+                  </div>
+                  <div class="content-2">
+                    <img
+                      src="images/main/oppo-find-n-1-1.jpg"
+                      alt="oppo-find-n-1-1"
+                    />
+                  </div>
+                </a>
+              </article>
+      
+              <article class="flex">
+                <a href="article.html">
+                <div>
+                  <h2>5 tính năng nổi bật có trên iOS 16 Beta-5</h2>
+                  <p>
+                    Vào rạng sáng ngày hôm nay (16/08), Apple đã chính thức gửi để
+                    người dùng trải nghiệm và các nhà phát triển bản ...
+                  </p>
+                  <a href="#">by Minh Liêm</a>
+                </div>
+                <div class="content-2">
+                  <img src="images/main/Hình-nền-iOS-16-1.jpg" alt="IOS 16" />
+                </div>
+            </a>
+              </article>
+      
+              <article class="flex">
+                <a href="article.html">
+                <div>
+                  <h2>
+                    Moto Zazr 2022 ra mắt: màn hình gập 144Hz, Snapdragon 8+ Gen 1,
+                    giá từ 20,8 triệu đồng
+                  </h2>
+                  <p>
+                    Ngay sau khi Samsung tung ra bộ đôi Galaxy Z Fold 4 và Galaxy Z
+                    Flip 4, Motorola cũng đã tung ra mẫu ...
+                  </p>
+                  <a href="#">by Tuấn Kiệt</a>
+                </div>
+                <div class="content-2">
+                  <img src="images/main/Zazr-2022.jpg " alt="Zazr-2022" />
+                </div>
+            </a>
+              </article>
+      
+              <article class="flex">
+                <a href="article.html">
+                <div>
+                  <h2>99% người đăng ký chưa từng chơi game của Netflix</h2>
+                  <p>
+                    Vào tháng 11/2021, Netflix đã chính thức ra mắt ra mắt các tựa
+                    game di động, qua đó phần nào thể hiện tham ...
+                  </p>
+                  <a href="#">by Minh Liêm</a>
+                </div>
+                <div class="content-2">
+                  <img
+                    src="images/main/Netflix-Games-is-now-available-for-iOS-and-iPadOS.jpg"
+                    alt="Netflix Netflix-Games-is-now-available-for-iOS-and-iPadOS"
+                  />
+                </div>
+            </a>
+              </article>
+      
+              <article class="flex">
+                <a href="article.html">
+                <div>
+                  <h2>
+                    Samsung phủ nhận tin đồn về việc ngừng phát triển những con chip
+                    Exynos
+                  </h2>
+                  <p>
+                    Trong suốt thời gian vừa qua, các tin đồn về việc Samsung ngừng
+                    phát triển dòng chip Exynos đã trở thành chủ đề ...
+                  </p>
+                  <a href="#">by Tuấn Kiệt</a>
+                </div>
+                <div class="content-2">
+                  <img
+                    src="images/main/samsung-exynos_auto_x2-1.jpg"
+                    alt="samsung-exynos_auto_x2-1"
+                  />
+                </div>
+            </a>
+              </article>
+            </section>
+          </main>
+      
+          <hr />
+      
+          <section class="appraise">
+              <h2>GEN-Z NEWS ĐÁNH GIÁ</h2>
+      
+            <div class="video-ytb flex">
+              <article class="apprise-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/m7B8b_z7MHg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </article>
+              <article class="apprise-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/-QJ_-7s4CTE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </article>
+            </div>
+      
+            <div class="last-heading flex">
+              <article>
+                <a href="article.html">
+                  <img src="images/apprise/redmagic7-12.jpg" alt="redmagic7-12" />
+      
+                  <h3>
+                    Đánh giá Nubia Red Magic 7: Thiết kế ấn tượng, hiệu năng hàng đầu!
+                  </h3>
+                </a>
+              </article>
+              <article>
+                <a href="article.html">
+                  <img
+                    src="images/apprise/Danh-gia-Xiaomi-P1-series-55-inch-6.jpg"
+                    alt="Danh-gia-Xiaomi-P1-series-55-inch-6"
+                  />
+      
+                  <h3>
+                    Đánh giá TV Xiaomi P1: màn hình 55” 4K nhưng chỉ 10 triệu đồng
+                  </h3>
+                </a>
+              </article>
+              <article>
+                <a href="article.html">
+                  <img
+                    src="images/apprise/Danh-gia-ROG-Flow-Z13-Tablet-Gaming-manh-me-nhat-the-gioi-i7-12700H-RTX-3050-thumb.jpg"
+                    alt="Danh-gia-ROG-Flow-Z13-Tablet-Gaming-manh-me-nhat-the-gioi-i7-12700H-RTX-3050-thumb"
+                  />
+      
+                  <h3>
+                    Đánh giá ROG Flow Z13: Tablet Gaming 50 triệu với i7-12700H và RTX
+                    3050
+                  </h3>
+                </a>
+              </article>
+            </div>
+          </section>
+      
+          <hr />
+      
+          <section class="topic-bonus">
+              <!-- bonus 1 & 2 -->
+              <div class="flex">
+                  <!-- bonus 1 - technology -->
+                  <article class="width-topic-bonus">
+                      <div class="flex">
+                          <h2 class="bonus-one">Công Nghệ</h2>
+                          <a href="#" class="readMore">Xem tất cả</a>
+                      </div>
+                      <div class="border-div flex">
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/Mo-hinh-iPhone-14-iPhone-14-Max-iPhone-14-Pro-Max-12.jpg"
+                                      alt="Mo-hinh-iPhone-14-iPhone-14-Max-iPhone-14-Pro-Max-12">
+                                  <h3>Apple Flagship - Lộ ngày ra mắt thế hệ iphone 14</h3>
+                              </a>
+                          </div>
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/5giphone.jpg" alt="5giphone">
+                                  <h3>5G rất mạnh, nhưng có thể thhay thế được Wi-fi không?</h3>
+                              </a>
+                          </div>
+                      </div>
+                  </article>
+                  
+                  <!-- bonus 2 - sport -->
+                  <article class="width-topic-bonus">
+                      <div class="flex">
+                          <h2 class="bonus-two">Thể Thao</h2>
+                          <a href="sport.html" class="readMore">Xem tất cả</a>
+                      </div>
+                      <div class="border-div flex">
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/Ronaldo.jpg" alt="Ronaldo">
+                                  <h3>Nani: 'Ronaldo không thể chờ Man Utd thay đổi'</h3>
+                              </a>
+                          </div>
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/ElonMuskmuaMU.jpg" alt="ElonMuskmuaMU">
+                                  <h3>Tỷ phú Thế Giới - Elon Musk nói đùa sẽ mua MU</h3>
+                              </a>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+      
+              <!-- bonus 3 & 4 -->
+              <div class="flex">
+                  <!-- bonus 3 - Entertainment -->
+                  <article class="width-topic-bonus">
+                      <div class="flex">
+                          <h2 class="bonus-three">Giải Trí</h2>
+                          <a href="#" class="readMore">Xem tất cả</a>
+                      </div>
+                      <div class="border-div flex">
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/TrinhCongSon.jpg" alt="TrinhCongSon">
+                                  <h3>Galaxy Play độc quyền phát hành "Em và Trịnh"</h3>
+                              </a>
+                          </div>
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/ThuyTien.png" alt="ThuyTien">
+                                  <h3>Hoa hậu Thùy Tiên: Tôi chưa mua ôtô, vẫn đi xe công nghệ</h3>
+                              </a>
+                          </div>
+                      </div>
+                  </article>
+                  
+                  <!-- bonus 4 - bla bla -->
+                  <article class="width-topic-bonus">
+                      <div class="flex">
+                          <h2 class="bonus-four">Chuyên Mục Khác</h2>
+                          <a href="#" class="readMore">Xem tất cả</a>
+                      </div>
+                      <div class="border-div flex">
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/Oto.png" alt="Oto">
+                                  <h3>Mercedes-Benz chưa vội khai tử xe rẻ nhất, vì vẫn bán tốt</h3>
+                              </a>
+                          </div>
+                          <div class="group-div">
+                              <a href="article.html">
+                                  <img src="images/topic-bonus/DienBienChinhSu.png" alt="DienBienChinhSu">
+                                  <h3>Diễn biến chính tình hình chiến sự Nga - Ukraine ngày 17/8</h3>
+                              </a>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+          </section>
+
+        <footer id="footer">
+          <div class="width-main flex">
+            <div class="footer-left col-fourth">
+                <h1 class="title">Liên hệ</h1>
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="https://www.google.com/maps/place/371+Nguy%E1%BB%85n+Ki%E1%BB%87m,+Ph%C6%B0%E1%BB%9Dng+3,+G%C3%B2+V%E1%BA%A5p,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8166109,106.6763787,17z/data=!3m1!4b1!4m5!3m4!1s0x317528e195f816b7:0xfb5c0101490d8870!8m2!3d10.8165873!4d106.6786161?hl=vi-VN" target="_blank">
+                                371 Nguyễn Kiệm, Tp.HCM
+                            </a>                    
+                        </li>
+                        <li class="flex">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>contact@genznews.vn</p>
+                        </li>
+                        <li class="flex">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>0919 435 885</p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-social">
+                    <ul class="flex">
+                        <li><a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands ti-android"></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fa-brands fa-app-store"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-mid-1 col-fourth">
+                <h1 class="title">Danh mục báo</h1>
+    
+                <div class="pd-left">
+                    <ul>
+                        <li><a href="tech.html">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Công nghệ
+                        </li></a>
+    
+                        <li><a href="sport.html">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Thể thao
+                        </li></a>
+    
+                        <li><a href="index.html">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Giải trí
+                        </li></a>
+    
+                        <li class="sub-title">
+                            <h3>Quản lý dự án</h3>
+                        </li>
+    
+                        <li class="author flex">
+                            <i class="fa-solid fa-user-pen"></i>
+                            <p>Minh Liêm - Tuấn Kiệt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-mid-2 col-fourth">
+                <h1 class="title">Hỗ trợ kỹ thuật</h1>
+    
+                <div class="pd-left">
+                    <ul>
+                        <li><a href="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Quyền riêng tư và Cookie
+                        </a></li>
+    
+                        <li><a href="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Điều khoản sử dụng
+                        </a></li>
+                        
+                        <li><a href="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Điều khoản quảng cáo
+                        </a></li>
+    
+                        <li><a href="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Các nhãn hàng đối tác
+                        </a></li>
+    
+                        <li><a href="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Trợ giúp
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-right col-fourth">
+                <h1 class="title">Gửi phản hồi</h1>
+                <p>Cập nhật tin tức và gửi ý kiến cho chúng tôi tại đây.</p>
+    
+                <div class="mail">
+                    <div class="flex">
+                        <input type="text" placeholder="Nhập nội dung..." id="body-mail">
+                        <a id="mailTo" href="#contact" onclick="sendMail()">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <p>Copyright &copy; 2022. All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,909 @@
+:root {
+    --colorMain: #FFC312;
+    --colorB: black;
+    --colorW: white;
+    --sports: #4cd137;
+    --tech: #1e90ff;
+    --entertainment: #ff3f34;
+    --width: 80%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI","Segoe WP",Arial,Sans-Serif;
+    color: var(--colorW);
+}
+
+img {
+    width: 100%;
+}
+
+@keyframes animate {
+    0%, 80% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    100% {
+        color: var(--colorMain);
+        text-shadow: 0 0 10px var(--colorMain),
+        0 0 10px var(--colorMain)
+        0 0 20px var(--colorMain)
+        0 0 40px var(--colorMain)
+        0 0 80px var(--colorMain)
+        0 0 160px var(--colorMain)
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.width-main {
+    width: var(--width);
+    margin: 0 auto;
+}
+
+.col-half {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.col-half-sub {
+    width: 50%;
+}
+
+.col-fourth {
+    width: 25%;
+}
+
+#recommend {
+    background-color: var(--colorMain);
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 230px;
+    left: 0;
+}
+
+#recommend li a {
+    color: var(--colorB) !important;
+    padding: 5px 20px;
+    display: block;
+}
+
+#recommend li a:hover {
+    opacity: 0.5;
+}
+
+@keyframes load {
+    0%, 10%, 90%, 100% {
+        width: 100px;
+        height: 100px;
+    }
+    
+    50% {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 100px;
+    height: 100px;
+    animation: load 1.3s linear infinite;
+}
+
+@keyframes rotate {
+    0%, 10% {
+        transform: rotate(0deg);
+    }
+    60%, 90%, 100% {
+        transform: rotate(90deg);
+    }
+}
+
+.loading div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: rotate 1.3s linear infinite;
+}
+
+.loading div:first-child {
+    top: 0;
+    left: 0;
+    background-color: var(--colorMain);
+}
+
+.loading div:nth-child(2) {
+    top: 0;
+    right: 0;
+    background-color: var(--tech);
+}
+
+.loading div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    background-color: var(--sports);
+}
+
+.loading div:last-child {
+    bottom: 0;
+    right: 0;
+    background-color: var(--entertainment);
+}
+
+header {
+    background-color: var(--colorB);
+}
+
+body {
+    background-color: var(--colorW);
+}
+
+.sticky-parent {
+    z-index: 100;
+    position: fixed;
+    background-color: #010101;
+    width: 100%;
+    top: 0;
+}
+
+.sticky-child {
+    margin: 0 10%;
+}
+
+.top-head {
+    padding: 20px 0 0 0;
+}
+
+.web-name h1 span {
+    animation: animate 2.5s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes animate {
+    0% {
+        color: var(--colorW);
+        filter: blur(1px) hue-rotate(0deg);
+        text-shadow: 0 0 10px var(--colorMain),
+        0 0 20px var(--colorMain),
+        0 0 40px var(--colorMain),
+        0 0 80px var(--colorMain),
+        0 0 120px var(--colorMain),
+        0 0 200px var(--colorMain),
+        0 0 300px var(--colorMain),
+        0 0 400px var(--colorMain);
+    }
+
+    30%, 70% {
+        color: #fff;
+        filter: blur(1px) hue-rotate(360deg);
+        text-shadow: 0 0 10px var(--colorMain),
+        0 0 20px var(--colorMain),
+        0 0 40px var(--colorMain),
+        0 0 80px var(--colorMain),
+        0 0 120px var(--colorMain),
+        0 0 200px var(--colorMain);
+    }
+    
+    100% {
+        text-shadow: none;
+        filter: blur(0px) hue-rotate(0deg);
+    }
+}
+
+.web-name h1:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+#real-time {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 1px solid var(--colorMain);
+}
+
+.header-social {
+    margin-left: auto;
+    margin-right: -10px;
+}
+
+.header-social li:hover {
+    transition: all 0.6s;
+    transform: scale(1.3);
+    padding-bottom: 15px;
+}
+
+.header-social .fa-brands {
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+.header-social ul li:hover a i {
+    color: var(--colorMain);
+}
+
+.hot-text {
+    background: radial-gradient(50% 35% at 50% 50%, #6b1839, transparent);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+    width: 300px;
+    padding: 40px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+}
+  
+@keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+}
+  
+@keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+.hot-content {
+    padding: 10px 50px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.hot-content:hover {
+    color: var(--colorMain);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mobile-css,
+.nav-bar i {
+    display: none;
+}
+
+.menu {
+    justify-content: space-between;
+}
+
+.menu li {
+    position: relative;
+    margin-right: 2px;
+}
+
+.nav-bar li:hover {
+    background-color: var(--colorMain);
+}
+
+.nav-bar li a {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    width: 160px;
+    text-align: center;
+}
+
+.nav-bar li:hover .sub-nav ul {
+    display: block;
+}
+
+.sub-nav ul {
+    position: absolute;
+    display: none;
+    background-color: #252525;
+    z-index: 1;
+}
+
+.sub-nav li a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.search > div {
+    height: 40px;
+    padding: 0 15px;
+    width: 230px;
+    border-radius: 4px;
+    background-color: var(--colorW);
+    position: relative;
+}
+
+.search > div input {
+    outline: none;
+    font-style: italic;
+    border: none;
+    color: var(--colorB);
+}
+
+.search > div > a {
+    padding: 8px 9px;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0;
+}
+
+.search a:hover,
+.search a:hover i {
+    background-color: var(--colorMain);
+    color: var(--colorW);
+    border-radius: 4px;
+    transition: all 0.5s;
+} 
+
+.search i {
+    color: var(--colorMain);
+}
+
+
+footer {
+    background-color: var(--colorB);
+    padding: 30px 0 20px 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+footer > div > div {
+    height: 240px;
+}
+
+footer .fa-solid {
+    padding-right: 3px;
+}
+
+.pd-left li:hover {
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+
+.pd-left a {
+    display: block;
+}
+
+.info li:first-child i {
+    float: left;
+    margin: 5px 8px 0 2px;
+}
+
+.info li:first-child a {
+    display: block;
+}
+
+.pd-left .sub-title:hover,
+.pd-left .author:hover {
+    padding-left: 0;
+}
+
+.pd-left li:hover i,
+.pd-left li:hover a {
+    color: var(--colorMain);
+}
+
+.pd-left .author:hover i {
+    color: var(--colorW);
+}
+
+.footer-left .fa-solid {
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: calc(var(--width) + 10%);
+    border-bottom: 3px double var(--colorW);
+    font-weight: 700;
+}
+
+.info li:first-child {
+    display: block !important;
+}
+
+.info li:hover a,
+.info li:first-child:hover i {
+    color: var(--colorMain);
+}
+
+.footer-social .fa-brands{
+    color: var(--colorB);
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.1rem;
+    background: var(--colorW);
+    border-radius: 4px;
+    line-height: 35px;
+}
+
+.footer-social a:hover {
+    transition: all 0.5s;
+    transform: scale(1.3);
+}
+
+.footer-social a:hover i {
+    color: var(--colorW);
+    transition: all 0.5s;
+}
+
+.footer-social li:first-child a:hover,
+.action li:first-child:hover,
+.action li:last-child:hover {
+    background-color: #3b5999;
+    border-color: #3b5999;
+}
+
+.footer-social li:nth-child(2) a:hover,
+.action li:nth-child(3):hover {
+    background-color: #55acee;
+    border-color: #55acee;
+}
+
+.footer-social li:nth-child(3) a:hover {
+    background-color: #c00;
+    border-color: #c00;
+}
+
+.footer-social li:nth-child(5) a:hover {
+    background-color: #97C024;
+    border-color: #97C024;
+}
+
+.footer-social li:nth-child(4) a:hover,
+.action li:nth-child(4):hover,
+.action li:nth-child(5):hover,
+.action li:nth-child(6):hover {
+    background-color: var(--colorMain);
+    border-color: var(--colorMain);
+}
+
+.footer-social li:last-child a:hover {
+    background: linear-gradient(to bottom, #18bffb, #2072f3);
+    border-color: linear-gradient(to bottom, #18bffb, #2072f3);
+}
+
+.footer-right p {
+    padding-bottom: 20px;
+}
+
+.mail > div {
+    padding: 0 15px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    width: 90%;
+}
+
+.mail > div input {
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-style: italic;
+    border: none;
+    color: var(--colorB);
+}
+
+.mail a {
+    padding: 8px;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0px;
+    background-color: var(--colorMain);
+    line-height: normal;
+    border-radius: 4px;
+}
+
+.mail a:hover {
+    opacity: 0.5;
+}
+
+footer > p {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.container {
+    display: none;
+}
+
+.main {
+    padding: 40px 0 30px 0;
+}
+
+.main a,
+.main i,
+.main p,
+.main h1,
+.main h2 {
+    color: var(--colorB);
+}
+
+.news-left {
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.news-right {
+    width: 25%;
+    height: auto;
+}
+
+.news-right i {
+    float: left;
+    margin: 5px 0px 0 2px;
+    margin-left: -15px;
+    color: var(--colorB);
+}
+
+.banner-left:hover img,
+.banner-right > div:hover img,
+.mini-img:hover,
+.rc-article a:first-child:hover img {
+    filter: blur(2px);
+}
+
+.banner-left {
+    position: relative;
+    overflow: hidden;
+}
+
+.title-banner {
+    position: absolute;
+    color: var(--colorW) !important;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 10px 15px 20px;
+    background-image: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.3),rgba(0,0,0,.9));
+}
+
+.title-banner:hover {
+    color: var(--colorMain) !important;
+    transition: color .5s;
+}
+
+.tb-right {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+ }
+
+.category {
+    padding-bottom: 30px;
+}
+
+.ct-nav {
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    border-bottom: 3px double var(--colorB);
+    height: 50px;
+}
+
+.effect span {
+    color: var(--colorMain);
+    display: inline-block;
+    animation: waviy 1.3s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-13px)
+    }
+}
+
+.clip .name a {
+    background-image: linear-gradient(-225deg, var(--colorMain) 0%, var(--sports) 29%, var(--tech) 67%, var(--entertainment) 100%); 
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200%;
+    }
+}
+
+.water {
+    position: relative;
+}
+  
+.water h1 {
+    color: var(--colorW);
+    font-size: 2.3rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    margin-left: 95px;
+}
+  
+.water a:nth-child(1) h1 {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--tech);
+}
+  
+.water a:nth-child(2) h1 {
+    color: var(--tech);
+    animation: textWater 4s ease-in-out infinite;
+}
+
+.water .sports:nth-child(1) h1 {
+    -webkit-text-stroke: 2px var(--sports);
+    margin-left: 75px;
+}
+
+.water .sports:nth-child(2) h1 {
+    color: var(--sports);
+    margin-left: 75px;
+}
+
+.water .entertainment:nth-child(1) h1 {
+    -webkit-text-stroke: 2px var(--entertainment);
+    margin-left: 60px;
+}
+
+.water .entertainment:nth-child(2) h1 {
+    color: var(--entertainment);
+    margin-left: 60px;
+}
+
+.water .another:nth-child(1) h1 {
+    -webkit-text-stroke: 2px var(--colorMain);
+    margin-left: 150px;
+}
+
+.water .another:nth-child(2) h1 {
+    color: var(--colorMain);
+    margin-left: 150px;
+}
+  
+@keyframes textWater {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 51%, 30% 45%, 53% 57%, 82% 52%, 100% 47%, 100% 100%, 0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0 60%, 25% 66%, 55% 64%, 83% 58%, 100% 65%, 100% 100%, 0% 100%
+        );
+    }
+}
+  
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.name:hover {
+    transition: color .3s;
+}
+
+.tech:hover {
+    color: var(--tech);
+}
+
+.sports:hover {
+    color: var(--sports);
+}
+
+.entertainment:hover {
+    color: var(--entertainment);
+}
+
+.another:hover {
+    color: var(--colorMain);
+}
+
+.read-more {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.read-more i {
+    font-size: 0.9rem;
+    margin: 5px 0 0 5px;
+}
+
+.read-more a,
+.read-more p {
+    font-size: 1.1rem;
+}
+
+.read-more:hover a,
+.read-more:hover p {
+    text-decoration: underline;
+}

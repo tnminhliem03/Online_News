@@ -1,0 +1,453 @@
+header {
+    height: auto;
+}
+
+.width-main {
+    width: 85%;
+}
+
+.col-half,
+.col-half-sub,
+.third-of-fourth,
+.another-news > div,
+.col-fourth,
+.top-head,
+.title,
+.third-of-fourth > div {
+    width: 100%;
+}
+
+.col-half {
+    margin-right: 0px;
+}
+
+.web-name {
+    margin: 0 auto;
+}
+
+#real-time,
+.header-social,
+.nav-bar,
+.menu .search,
+.nav-bar li:hover .sub-nav ul {
+    display: none;
+}
+
+.main {
+    padding: 40px 0;
+}
+
+.banner .banner-left {
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.banner-left,
+.banner-right > div {
+    margin-bottom: 20px;
+}
+
+.slider .title-banner {
+    bottom: 0%;
+}
+
+.btn i {
+    top: 10%;
+}
+
+.btn-next {
+    left: 50px;
+}
+
+.sticky-nav {
+    margin-top: 42px;
+}
+
+.hot-text {
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+.sticky-parent-mobile {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 85%;
+}
+
+.sticky-child-mobile {
+    margin: 0;
+}
+
+.mobile-css {
+    display: flex;
+}
+
+.mobile-css > div {
+    color: white;
+}
+
+#mobile-time {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    font-size: 1.1rem;
+}
+
+.list-icon {
+    display: block;
+    margin-left: auto;
+    padding: 10px 0;
+}
+
+.list-icon i {
+    font-size: 1.3rem;
+}
+
+.menu {
+    flex-direction: column;
+    display: flex;
+}
+
+.nav-bar {
+    flex-direction: column;
+}
+
+.nav-bar li a {
+    text-align: start;
+    padding-left: 20px;
+}
+
+.mobile-icon i {
+    display: block;
+    margin-right: 18px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.sub-nav li {
+    background-color: #333;
+}
+
+.sub-nav li a {
+    padding-left: 35px;
+}
+
+.search {
+    padding: 50px 40px 30px 45px;
+}
+
+.ct-img,
+.another-news,
+.update-news > div,
+#footer > div,
+.mobile-social {
+    display: block;
+}
+
+.update-news {
+    padding-bottom: 40px;
+}
+
+
+.banner-right > div:last-child,
+.third-of-fourth > div {
+    margin-bottom: 0;
+}
+
+.another-news > div > div:last-child {
+    margin-bottom: 10px;
+}
+
+.ct-main {
+    flex-wrap: wrap;
+}
+
+.ct-nav .tech {
+    color: #1e90ff;
+}
+
+.ct-nav .sports {
+    color: #4cd137;
+}
+
+.ct-nav .entertainment {
+    color: #ff3f34;
+}
+
+.ct-nav .another,
+.latest-news .name a {
+    color: var(--colorMain);
+}
+
+.latest-news .name {
+    padding-bottom: 15px;
+    border-bottom: 3px double var(--colorB);
+}
+
+.category {
+    padding-bottom: 0;
+}
+
+.category > div > div {
+    padding-bottom: 20px;
+}
+
+.name {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.article:last-child {
+    border-bottom: 3px double var(--colorB);
+}
+
+.ar-left {
+    display: none;
+    width: 0%;
+}
+
+.ar-mid,
+.ar-right {
+    width: 50%;
+}
+
+.ar-mid .heading-news {
+    width: 200%;
+}
+
+.read-more a,
+.read-more p {
+    font-size: 1.1rem;
+}
+
+.mini-img {
+    padding-top: 50px;
+}
+
+.third-of-fourth .title-banner {
+    right: 0%;
+    bottom: 0%;
+}
+
+.news-right {
+    margin-top: 30px;
+    height: auto;
+}
+
+.news-right .title {
+    margin-top: 0;
+}
+
+.more {
+    width: 100%;
+    line-height: 1.3;
+}
+
+.news-right i {
+    padding-top: 3px;
+}
+
+#footer > div > div {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.mail > div {
+    width: 75%;
+}
+
+/* Trang tech */
+
+.width-page {
+    width: 85%;
+}
+
+section.banner {
+    display: block;
+    padding: 20px 0;
+}
+
+.banner-main-content {
+    width: 100%;
+    padding: 0;
+}
+
+.banner-sub-content {
+    width: 100%;
+    padding-top: 0;
+}
+
+.banner-sub-content > div {
+    display: block;
+}
+
+.banner-sub-content > div > div {
+    margin-top: 20px;
+}
+
+.banner-sub-content > div:last-child {
+    margin-top: 0;
+}
+
+.hot-topic {
+    height: auto;
+    padding: 0;
+}
+
+.hot-topic > a {
+    position: relative;
+}
+
+.hot-topic-content {
+    position:absolute;
+    bottom: 0;
+}
+
+.hot-topic-content h2 {
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.main-tech {
+    display: block;
+}
+
+.main-container-left {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.main-container-left h3 {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.main-container-left p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.main-container-left span {
+    margin-top: 1rem;
+}
+
+.container-top-left,
+.container-top-left article {
+    padding: 0;
+}
+
+.container-top-left article {
+    margin-bottom: 20px;
+}
+
+.container-bottom-left {
+    align-items: baseline;
+}
+
+.main-container-right {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.video-ytb {
+    width: 85%;
+    /* display: block; */
+    margin-bottom: 20px;
+}
+
+.last-heading {
+    width: 85%;
+    display: block;
+}
+
+.last-heading article {
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.appraise {
+    padding: 0;
+}
+
+.topic-bonus {
+    width: 85%;
+    padding: 20px 0 50px 0;
+}
+
+.topic-bonus > div,
+.border-div {
+    display: block;
+}
+
+.topic-bonus article div div {
+    width: 100%;
+}
+
+.topic-bonus article div div:first-child,
+.topic-bonus article div div:last-child {
+    padding: 30px 0 0 0;
+}
+
+.group-div h3 {
+    margin-top: 10px;
+}
+
+.width-topic-bonus {
+    width: 100%;
+    padding: 0;
+}
+
+.width-topic-bonus > div {
+    padding-top: 20px;
+}
+
+/* Trang chi tiet */
+
+.heading, .main {
+    display: block;
+}
+
+.heading .news-left,
+.content,
+.heading .news-right,
+.caption,
+.img-content,
+.rc {
+    width: 100%;
+}
+
+.writer > p:last-child {
+    width: 50%;
+    margin-left: 20px;
+}
+.heading .news-right {
+    display: flex;
+    margin-top: 20px;
+}
+
+.heading .news-right a {
+    width: 45%;
+    margin: 0;
+}
+
+.heading .news-right a:first-child {
+    margin-right: 10px;
+}
+
+.ads {
+    margin-bottom: 0;
+}
+
+.rc {
+    margin-top: 0;
+}
+
+.no-need > img:first-child {
+    margin-top: 0;
+}
+
+.no-need > img:last-child {
+    margin-bottom: 30px;
+}

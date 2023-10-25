@@ -1,0 +1,179 @@
+.nav-bar > li:first-child {
+    background-color: var(--colorMain);
+}
+
+.go {
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--colorMain);
+    border-radius: 4px;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    z-index: 100;
+    transition: background 0.5s;
+    display: none;
+}
+
+.go:hover {
+    background-color: var(--colorB);
+}
+
+.update-news {
+    padding-bottom: 30px;
+}
+
+.banner .banner-left {
+    height: 391.73px;
+}
+
+.banner-right {
+    flex-wrap: wrap;
+}
+
+.banner-right > div {
+    position: relative;
+}
+
+.btn i {
+    color: var(--colorW) !important;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 1.9;
+    background-color: var(--colorB);
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 46%;
+}
+
+.btn i:hover {
+    background-color: var(--colorMain);
+    opacity: 1;
+    transition: all .5s;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.tb-left {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.latest-news .name {
+    margin-bottom: 30px;
+}
+
+
+.topic:hover,
+.heading-news {
+    transition: color .3s;
+}
+
+.article {
+    border-bottom: 3px double var(--colorB);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.ar-left {
+    width: 25%;
+    text-align: center;
+}
+
+.ar-left a {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.ar-left p {
+    margin-top: 15px;
+}
+
+.ar-mid {
+    width: 50%;
+}
+
+.ar-mid h2,
+.ar-mid > a:nth-child(2) > p {
+    width: 95%;
+}
+
+.ar-mid > a:nth-child(2) > p:hover {
+    opacity: 0.7;
+}
+
+.ar-mid p {
+    padding: 10px 0;
+}
+
+.ar-mid h2 {
+    font-size: 1.3rem;
+}
+
+.ar-right {
+    width: 25%;
+}
+
+.mini-img {
+    width: 80%;
+}
+
+
+
+.third-of-fourth {
+    width: calc(100% / 3);
+}
+
+.third-of-fourth > div {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.third-of-fourth .title-banner {
+    right: 10%;
+    bottom: 15%;
+}
+
+.news-right .title {
+    border-color: var(--colorB);
+    width: 100%;
+    font-size: 1.8rem;
+    margin-top: -50px;
+}
+
+.more {
+    width: 95%;
+}
+
+.more li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.more p:hover {
+    color: var(--colorMain);
+    transition: color .3s;
+}
+
+.news-right p {
+    margin-left: 20px;
+}
